@@ -82,6 +82,40 @@ function viewLowInventory() {
     });
 }
 
+function addToInventory () {
+    inquirer.prompt([{
+        name: "itemID",
+        type: "input",
+        message: "Enter the ID for the item you would like to add inventory for: ",
+    },{
+        name: "itemQTY",
+        type: "input",
+        message: "How much quantity would you like to add? "
+
+    }]).then(function(answer) {
+        var query = "SELECT * FROM products WHERE item_id = " + answer.itemID;
+        connection.query(query, function (err, res) {
+            if (err) throw err;
+
+            // if no item ID matches the selection...
+
+            if (res.length <= 0)
+            {
+                console.log("No item ID match found. Please make another selection.");
+            } else {
+                var item_quantity = 0;
+                item_quantity = parseInt(res[0].stock_quantity) + parseInt(answer.itemQTY);
+                var queryOne = "UPDATE products SET stock_quantity = " + item_quantity + " WHERE item_id = " + answer.itemID;
+                connection.query(queryOne, function(err, res) {
+                    if (err) throw err;
+                    console.log("Quantity Added! Choose 'See Available Items' to see updated item list!");
+                });
+                userChoice();
+            }
+        })
+    })
+}
+
 function addNewProduct() {
     inquirer.prompt([{
         name: "itemName",
