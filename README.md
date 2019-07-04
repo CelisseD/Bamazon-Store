@@ -13,7 +13,7 @@ Running this app as a manager allows the user the option of viewing available in
 
 
 # Demo Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Al3GJb6GOAo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Bamazon Demo Video](https://img.youtube.com/vi/Al3GJb6GOAo/0.jpg)](https://youtu.be/Al3GJb6GOAo "Bamazon Demo Video")
 
 # Technologies Used
 <ul>
