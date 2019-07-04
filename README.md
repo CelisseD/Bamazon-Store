@@ -12,11 +12,8 @@ Running this app as a customer allows the user the option of viewing available i
 Running this app as a manager allows the user the option of viewing available inventory, viewing low quantity items with 5 or less in stock, adding to existing product inventory, adding a new product to the database, or exiting the app.
 
 
-# Screenshots
-<img src="https://via.placeholder.com/350x150"><br><br>
-<img src="https://via.placeholder.com/350x150"><br><br>
-<img src="https://via.placeholder.com/350x150"><br><br>
-<img src="https://via.placeholder.com/350x150"><br><br>
+# Demo Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Al3GJb6GOAo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Technologies Used
 <ul>
